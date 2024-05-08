@@ -1,0 +1,125 @@
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.form-2 {
+    width: 50%;
+    background-color: rgba(222, 223, 230, 1);
+    padding: 30px;
+    z-index: 10;
+}
+
+.form-2 .logo {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: 10px;
+}
+
+.form-2 .logo img {
+    width: 80px;
+    height: auto;
+}
+
+.form-2 label {
+    color: rgba(85, 85, 85, 1);
+    font-weight: 400;
+}
+
+.form-2 input {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+.form-2 a {
+    color: rgba(30, 39, 114, 1);
+    font-weight: 400;
+}
+
+.form-2 ::placeholder {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.btn-primary-2 {
+    display: block;
+    background-color: rgba(30, 39, 114, 1);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: .8rem;
+    padding: 5px 50px;
+    margin: 10px 15px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.53);
+}
+
+.btn-primary-3 {
+    display: block;
+    background-color: rgba(30, 39, 114, 1);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 10px;
+    width: clamp(40vw, 80px, 100vw);
+    margin: 10px auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.53);
+}
+
+.btn-primary-4 {
+    display: block;
+    background-color: #dedfe6;
+    outline: none;
+    border: 1px solid rgba(30, 39, 114, 1);
+    border-radius: 5px;
+    color: rgba(30, 39, 114, 1);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 40%;
+    margin: 10px auto;
+}
+
+
+
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 1);
+    width: 50%;
+    padding: 80px;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.463));
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    color: rgba(194, 194, 194, 1);
+}
+
+@media screen and (max-width:800px) {
+    .form-2 {
+        width: 100%;
+        margin: 1% 5%;
+    }
+
+    .pic {
+        display: none;
+    }
+
+}

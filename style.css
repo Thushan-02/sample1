@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blur {
+    opacity: 0.5;
+}
+
+nav {
+    position: fixed;
+    background-color: brown;
+    top: 0;
+    left: 0;
+}
+
+.contents {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 1.2rem);
+    color: black;
+    font-weight: bold;
+    margin: 30px 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.379);
+}
+
+.box {
+    border-radius: 30px;
+    box-shadow: 5px 5px 3px black;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+.services ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    align-items: center;
+    justify-items: center;
+    gap: 2px;
+    list-style: none;
+}
+
+.services ul li {
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.356);
+    padding: 20px 10px 10px 10px;
+    margin: 25px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.services ul li:hover {
+    scale: 0.9;
+}
+
+.services ul li p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.fa,
+.fa-solid {
+    font-size: 5rem;
+    color: rgba(58, 59, 123, 1);
+}
+
+/* abouts us section */
+.about-us {
+    width: clamp(200px, 80vw, 1200px);
+    margin: 100px auto;
+    padding: 50px;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+}
+
+.about-us h3 {
+    text-align: center;
+    text-decoration: underline black;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    width: 60%;
+    font-size: clamp(1rem, 15px, 1.5rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.about-us img {
+    width: 40%;
+    size: 100%;
+}
+
+.about-us .items {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Feedback section */
+.feedback {
+    background-color: rgba(58, 59, 123, 1);
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.feedback .description {
+    width: 30%;
+    color: whitesmoke;
+}
+
+.feedback .form {
+    width: 65%;
+    background-color: rgba(214, 214, 234, 0.85);
+    box-shadow: 2px 2px 3px rgba(214, 214, 234, 0.85);
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.feedback .form input,
+select {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.feedback .form .btn-primary-2 {
+    margin: 5px auto;
+    display: block;
+    background-color: rgba(15, 29, 149, 0.85);
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: .8rem;
+    padding: 2px 20px;
+}
+
+.btn-primary-2:hover {
+    transform: scale(.9);
+}
+
+/* FAQ */
+.faq {
+    margin: 30px 100px;
+}
+
+/* footer styles */
+footer {
+    background-color: rgba(97, 94, 104, 1);
+    padding: 25px;
+}
+
+footer p {
+    color: whitesmoke;
+    font-size: .7rem;
+    text-align: center;
+}
+
+.items-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+.items-2 .fa-solid {
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.items-2 h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.items-2 p {
+    font-size: .7rem;
+}
+
+.items-3 {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+    .about-us .items {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .about-us {
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .about-us p {
+        line-height: 20px;
+        width: 90%;
+    }
+
+    .feedback {
+        flex-direction: column;
+        padding: 10px 3px;
+    }
+
+    .feedback .description {
+        width: 80%;
+        margin: 5px 0 20px 0;
+    }
+
+    .feedback .form {
+        width: 90%;
+    }
+
+    .faq {
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    footer .items-2 {
+        flex-wrap: wrap;
+        font-size: .7rem;
+    }
+
+    .items-2 h5 {
+        font-size: 0.7;
+    }
+}
